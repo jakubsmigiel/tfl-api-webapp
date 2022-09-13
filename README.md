@@ -12,13 +12,13 @@ The React.js + Bulma front-end displays the data received from the back-end API 
 
 The database can be created using the following MySQL code on the MySQL server:
 ```SQL
-CREATE USER 'tflapp_user'@'localhost' IDENTIFIED BY '5vGLonpno1wsw2at';
 CREATE DATABASE tflapp;
+CREATE USER 'tflapp_user'@'localhost' IDENTIFIED BY '5vGLonpno1wsw2at';
 GRANT ALL PRIVILEGES on tflapp.* TO 'tflapp_user'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
-Essentially, a new user called `tflapp_user` needs to be added to the MySQL server, identified by the password `5vGLonpno1wsw2at`. Then a database called `tflapp` needs to be created. Finally, all priviliged to the `tflapp` database should be given to the `tflapp_user` user.
+First, a database called `tflapp` needs to be created. Then, a new user called `tflapp_user` needs to be added to the MySQL server, identified by the password `5vGLonpno1wsw2at`. Finally, all priviliged to the `tflapp` database should be given to the `tflapp_user` user.
 
 ### 2. Running the Application
 
